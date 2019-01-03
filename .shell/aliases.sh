@@ -1,0 +1,18 @@
+# Aliases
+alias rvmchef='eval "$(chef shell-init zsh)"'
+alias rake='noglob rake'
+alias jq='noglob jq'
+alias tf='terraform'
+alias tfws='terraform workspace select'
+alias kc='kubectl'
+alias barca='kubectl --context barca'
+alias kcn='kubectl --context cluster-1-nonprod'
+alias kcp='kubectl --context cluster-1-prod'
+alias kcbd='kubectl --context bd-prod-1'
+alias awsp='export AWS_PROFILE=prod-datalens'
+alias awsn='export AWS_PROFILE=nonprod-datalens'
+alias awspp='export AWS_PROFILE=prod-proton'
+alias awspn='export AWS_PROFILE=nonprod-proton'
+alias awsdv='export AWS_PROFILE=prod-dsf-datavision'
+alias awsfed='export AWS_PROFILE=nordstrom-federated'
+alias kill_cisco="ps -ef | grep AnyConnect | grep -v grep | awk '{print $2}' | xargs kill -9"
