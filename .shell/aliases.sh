@@ -14,5 +14,4 @@ alias awsn='export AWS_PROFILE=nonprod-datalens'
 alias awspp='export AWS_PROFILE=prod-proton'
 alias awspn='export AWS_PROFILE=nonprod-proton'
 alias awsdv='export AWS_PROFILE=prod-dsf-datavision'
-alias awsfed='export AWS_PROFILE=nordstrom-federated'
-alias kill_cisco="ps -ef | grep AnyConnect | grep -v grep | awk '{print $2}' | xargs kill -9"
+garfunkel() { kubectl exec -it $(kubectl get pod -l app=garfunkel -o jsonpath="{.items[0].metadata.name}") bash; }
