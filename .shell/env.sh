@@ -1,5 +1,8 @@
 # Editor
 export EDITOR=vi
+# History
+export HISTCONTROL=ignorespace:erasedups
+export HISTSIZE=1000000
 # AWS
 export AWS_REGION="us-west-2"
 export AWS_DEFAULT_REGION="us-west-2"
